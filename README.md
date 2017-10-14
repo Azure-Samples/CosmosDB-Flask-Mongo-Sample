@@ -1,4 +1,4 @@
-This is a sample for Azure Cosmos DB. You can read the full tutorial [here]()
+This is a sample for Azure Cosmos DB. You can read the full tutorial [here]().
 # Azure Cosmos DB: Build a Flask app with the MongoDB API
 
 Azure Cosmos DB is Microsoft’s globally distributed multi-model database service. You can quickly create and query document, key/value, and graph databases, all of which benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
@@ -70,3 +70,26 @@ Let's take a quick review of what's happening in the app. Open the **app.py** fi
 4. Run the app with `flask run` and browse to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 5. Add and remove tasks and see them added and changed in the collection.
+
+## Deploy to Azure
+
+To deploy this app, you can create a new web app in Azure and enable continuous deployment with a fork of this github repo. Follow this [tutorial](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-continuous-deployment) to set up continuous deployment with Github in Azure.
+
+When deploying to Azure, you should remove your application keys and make sure the section below is not commented out:
+
+```python
+    client = MongoClient(os.getenv("MONGOURL"))
+    db = client.test    #Select the database
+    db.authenticate(name=os.getenv("MONGO_USERNAME"),password=os.getenv("MONGO_PASSWORD"))
+```
+
+You then need to add your MONGOURL, MONGO_PASSWORD, and MONGO_USERNAME to the application settings. You can follow this [tutorial](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-configure#application-settings) to learn more about Application Settings in Azure Web Apps.
+
+If you don't want to create a fork of this repo, you can also click the deploy to Azure button below. You should then go into Azure and set up the application settings with your Cosmos DB account info.
+
+<a href="https://deploy.azure.com/?repository=https://github.com/heatherbshapiro/To-Do-List---Flask-MongoDB-Example" target="_blank">
+<img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+[!NOTE]
+If you plan to store your code in Github or other source control options, please be sure to remove your connection strings from the code. They can be set with application settings for the web app instead.
