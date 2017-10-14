@@ -31,7 +31,7 @@ Now let's clone the app, set the connection string, and run it.
     ```bash
     pip install -r .\requirements.txt
     ```
-4. Open the folder in Visual Studio Code.
+4. Open the folder in Visual Studio Code or your IDE of choice.
 
 ## Review the code
 
