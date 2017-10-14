@@ -19,7 +19,7 @@ This quick start guide demonstrates how to build a simple TO-DO Flask App using 
 
 ## Clone the sample application
 
-Now let's clone a Flask-MongoDB API app from github, set the connection string, and run it. You see how easy it is to work with data programmatically.
+Now let's clone the app, set the connection string, and run it.
 
 1. Open a git terminal window, such as git bash, and `cd` to a working directory.
 2. Run the following command to clone the sample repository.
