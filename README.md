@@ -70,4 +70,3 @@ Let's take a quick review of what's happening in the app. Open the **app.py** fi
 4. Run the app with `flask run` and browse to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 5. Add and remove tasks and see them added and changed in the collection.
-
