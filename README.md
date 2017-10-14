@@ -4,7 +4,7 @@ description: Presents a Python Flask code sample you can use to connect to and q
 services: cosmos-db
 documentationcenter: ''
 author: hshapiro
-manager: dwashin
+manager: scicoria
 editor: ''
 
 ms.assetid: 
@@ -22,11 +22,11 @@ ms.author: hshapiro
 
 Azure Cosmos DB is Microsoft’s globally distributed multi-model database service. You can quickly create and query document, key/value, and graph databases, all of which benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
 
-This quick start guide demonstrates how to build a simple TO-DO Flask App using Azure Cosmos DB with the [Azure Cosmos DB Emulator](/local-emulator.md) instead of MongoDB.
+This quick start guide demonstrates how to build a simple TO-DO Flask App using Azure Cosmos DB with the [Azure Cosmos DB Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator) instead of MongoDB.
 
 ## Prerequisites
 
-- Download the [Azure Cosmos DB Emulator](/local-emulator.md). The emulator is currently only supported on Windows. The sample shows how to use the sample with a production key from Azure, which can be done on any platform.
+- Download the [Azure Cosmos DB Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator). The emulator is currently only supported on Windows. The sample shows how to use the sample with a production key from Azure, which can be done on any platform.
 
 - If you don’t already have Visual Studio Code installed, you can quickly install [VS Code](https://code.visualstudio.com/Download) for your platform (Windows, Mac, Linux).
 
@@ -44,7 +44,7 @@ Now let's clone a Flask-MongoDB API app from github, set the connection string, 
 2. Run the following command to clone the sample repository.
 
     ```bash
-    git clone https://github.com/heatherbshapiro/To-Do-List---Flask-MongoDB-Example.git
+    git clone https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git
     ```
 3. Run the following command to install the python modules.
     ```bash
