@@ -1,4 +1,4 @@
-﻿---
+---
 services: cosmos-db
 platforms: java
 author: heatherbshapiro
