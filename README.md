@@ -1,9 +1,11 @@
-This is a sample for Azure Cosmos DB. You can read the full tutorial [here]().
-# Azure Cosmos DB: Build a Flask app with the MongoDB API
+﻿---
+services: cosmos-db
+platforms: java
+author: heatherbshapiro
+---
 
-Azure Cosmos DB is Microsoft’s globally distributed multi-model database service. You can quickly create and query document, key/value, and graph databases, all of which benefit from the global distribution and horizontal scale capabilities at the core of Azure Cosmos DB.
-
-This quick start guide demonstrates how to build a simple TO-DO Flask App using Azure Cosmos DB with the [Azure Cosmos DB Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator) instead of MongoDB.
+# Build a Flask app using Azure Cosmos DB for MongoDB API
+Azure Cosmos DB is a fully managed globally distributed, multi-model database service, transparently replicating your data across any number of Azure regions. You can elastically scale throughput and storage, and take advantage of fast, single-digit-millisecond data access using the API of your choice backed by 99.999 SLA. This sample shows you how to use the Azure Cosmos DB for MongoDB API to store and access data from a Flask application.
 
 ## Prerequisites
 
@@ -22,11 +24,7 @@ This quick start guide demonstrates how to build a simple TO-DO Flask App using 
 Now let's clone the app, set the connection string, and run it.
 
 1. Open a git terminal window, such as git bash, and `cd` to a working directory.
-2. Run the following command to clone the sample repository.
-
-    ```bash
-    git clone https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git
-    ```
+2. Clone this sample repository
 3. Run the following command to install the python modules.
     ```bash
     pip install -r .\requirements.txt
