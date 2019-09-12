@@ -1,7 +1,13 @@
 ---
-services: cosmos-db
-platforms: java
-author: heatherbshapiro
+page_type: sample
+languages:
+- javascript
+- python
+- html
+products:
+- azure
+description: "Azure Cosmos DB is a fully managed globally distributed, multi-model database service, transparently replicating your data across any number of Azure regions."
+urlFragment: CosmosDB-Flask-Mongo-Sample
 ---
 
 # Build a Flask app using Azure Cosmos DB for MongoDB API
